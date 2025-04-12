@@ -32,6 +32,14 @@ Las etiquetas:
 <tr>
 <th>
 <td>
+<from>
+<label>
+<input>
+<textarea>
+<br>
+<botton>
+<select>
+<option>
 
 
 Los atributos:
@@ -52,4 +60,18 @@ frameborder=
 allowfullscream
 scope
 summary
-# Cursofront
+for=
+method=
+required
+id=
+rows=
+cols=
+action=
+checkbox
+minlength
+maxlength
+pattern
+
+Se realiza la incursion en la tecnologia de fromspree
+
+

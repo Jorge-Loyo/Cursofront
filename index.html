@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><strong>Mi Primer Proyecto</strong></title>
+</head>
+
+<body>
+    <header>
+        <img src="image/imagenlogo1.png" alt="Logo de la Empresa" width="100" height="100">
+        <h1>Mi Primer Proyecto</h1>
+        <h2>Curso Frontend</h2>
+        <h3>HTML y CSS</h3>
+        <h4>Introducción a la Programación Web</h4>
+        <h5>Desarrollo de Aplicaciones Web</h5>
+        <h6>Proyecto Final</h6>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#about">Productos</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>
+                Este es mi primer proyecto de desarrollo web. Estoy aprendiendo a crear páginas web utilizando HTML y
+                CSS.
+                En este proyecto, he implementado una estructura básica de una página web con encabezados, párrafos y un
+                diseño simple.
+                Quiero usar <em>Texto en Cursiva</em> y <strong>Texto en Negrita</strong> para resaltar información
+                importante.
+                Tambien quiero usar <u>Texto Subrayado</u> para enfatizar ciertos puntos y <s>Texto Tachado</s> para
+                mostrar
+                información que ya no es relevante.
+            </p>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TC8bT7zTdoE?si=w78af7s3JKJCrqou"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <div>
+                <video width="560" height="315" controls>
+                    <source src="image/video1.MOV" type="video/mp4">
+                    <track src="subtitulo.vtt" kind="subtitles" srclang="es" label="Español">
+                    Tu navegador no soporta la etiqueta de video.
+            </div>
+        </section>
+        <section>
+            <h2>Formulario de datos</h2>
+            <form action="https://formspree.io/f/xqapnbrr" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Mensaje:</label><br>
+                <section>
+                    <input type="radio" id="option1" name="message" value="opcion1" checked>
+                    <label for="option1">Opción 1</label><br>
+                    <input type="radio" id="option2" name="message" value="opcion2">
+                    <label for="option2">Opción 2</label><br>
+                    <input type="radio" id="option3" name="message" value="opcion3">
+                    <label for="option3">Opción 3</label><br>
+                </section>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> Este es el pie de pagina</p>
+    </footer>
+</body>
+
+</html>
