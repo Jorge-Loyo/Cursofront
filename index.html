@@ -5,12 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><strong>Mi Primer Proyecto</strong></title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Primer Proyecto</title>
 </head>
 
 <body>
     <header>
-        <img src="image/imagenlogo1.png" alt="Logo de la Empresa" width="100" height="100">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#about">Productos</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--<img src="image/imagenlogo1.png" alt="Logo de la Empresa" width="100" height="100"> -->
         <h1>Mi Primer Proyecto</h1>
         <h2>Curso Frontend</h2>
         <h3>HTML y CSS</h3>
@@ -18,15 +28,7 @@
         <h5>Desarrollo de Aplicaciones Web</h5>
         <h6>Proyecto Final</h6>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#Nosotros">Nosotros</a></li>
-            <li><a href="#about">Productos</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+
     <main>
         <section>
             <p>
@@ -48,6 +50,8 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
+            <br>
+            <br>
             <div>
                 <video width="560" height="315" controls autoplay muted loop>
                     <source src="image/video1.MOV" type="video/mp4">
@@ -57,6 +61,7 @@
                 </video>
             </div>
         </section>
+
         <section>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.300618472167!2d-58.3602822!3d-34.62122255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352a7fbe0047%3A0x7a6c8ca7b32a9a61!2sVenezuela%20172%2C%20C1095%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1744670930518!5m2!1ses!2sar"
@@ -64,6 +69,8 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section>
+            <br>
+            <br>
             <h2>Formulario de datos</h2>
             <form action="https://formspree.io/f/xqapnbrr" method="POST">
                 <label for="name">Nombre:</label>
@@ -85,7 +92,7 @@
         </section>
     </main>
     <footer>
-        <p> Este es el pie de pagina</p>
+        <p> Este es el pie de pagina / Todos los derechos reservados</p>
     </footer>
 </body>
 
