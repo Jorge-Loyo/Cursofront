@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boca Juniors | Club Atlético</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Club Atlético Boca Juniors</h1>
+        <img src="img/boca_logo.png" alt="Logo de Boca Juniors" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos al Mundo Xeneize</h2>
+            <p>Aquí encontrarás todo sobre el Club Atlético Boca Juniors, el equipo más grande de Argentina.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/swxMHPsDycE?si=751MLPedsHu0i-OD"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Disfruta de nuestro video oficial y conoce más sobre nuestra historia y pasión.</p>
+            <video controls width="100%">
+                <source src="video/Video_Boca.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos Oficiales</h2>
+            <div class="productos-grid">
+                <div class="card">
+                    <img src="img/camiseta_local.png" alt="Camiseta Local Boca Juniors">
+                    <h3>Camiseta Local 2025</h3>
+                    <p>La nueva camiseta oficial de Boca Juniors. ¡No te quedes sin ella!</p>
+                    <span>$ 75.000</span>
+                </div>
+                <div class="card">
+                    <img src="img/camiseta_alternativa.png" alt="Camiseta Alternativa Boca Juniors">
+                    <h3>Camiseta Alternativa</h3>
+                    <p>Diseño exclusivo para los verdaderos hinchas.</p>
+                    <span>$ 70.000</span>
+                </div>
+                <div class="card">
+                    <img src="img/gorra.png" alt="Gorra Boca Juniors">
+                    <h3>Gorra Oficial</h3>
+                    <p>Protege tu cabeza con el escudo más grande.</p>
+                    <span>$ 15.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>Lo que dicen nuestros Hinchas</h2>
+            <div class="reseñas-grid">
+                <div class="reseña-item">
+                    <h3>Gran Calidad</h3>
+                    <p>"La camiseta es excelente, los materiales y el diseño son de primera."</p>
+                    <span>- Juan Perez</span>
+                </div>
+                <div class="reseña-item">
+                    <h3>Envío Rápido</h3>
+                    <p>"Llegó antes de lo esperado y el producto es tal cual la descripción."</p>
+                    <span>- Maria Garcia.</span>
+                </div>
+                <div class="reseña-item">
+                    <h3>Atención de 10</h3>
+                    <p>"Tuve una consulta y me respondieron enseguida. El mejor servicio al cliente."</p>
+                    <span>- Carlos Rodriguez.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Envíanos tus consultas o comentarios. ¡Queremos escucharte!</p>
+            <form action="https://formspree.io/f/mblovjdr" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Club Atlético Boca Juniors. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/BocaJuniors" target="_blank">Facebook</a>
+            <a href="https://twitter.com/BocaJuniors" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/bocajrsoficial/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

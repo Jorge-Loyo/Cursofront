@@ -1,0 +1,441 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Fuente principal */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    /* Un gris claro para el fondo */
+}
+
+/* Estilos de encabezados */
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    /* Una fuente para los títulos */
+    color: #003366;
+    /* Azul Boca */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #FFD700;
+    /* Amarillo Boca */
+    text-decoration: none;
+    /* Quita el subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Subraya al pasar el mouse */
+}
+
+/* Contenedor principal para centrar el contenido */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    /* Separador entre secciones */
+}
+
+section:last-of-type {
+    border-bottom: none;
+    /* Elimina el separador de la última sección */
+}
+
+/*-----------------------------------------------------------------*/
+/* Estilos del encabezado */
+header {
+    background-color: #003366;
+    /* Azul Boca */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #FFD700;
+
+}
+
+header .logo {
+    max-width: 100px;
+    /* Tamaño del logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    /* Quita los puntos de la lista */
+    display: flex;
+    /* Para poner los elementos en fila */
+    justify-content: center;
+    /* Centra los elementos */
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Transición suave al pasar el mouse */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo semi-transparente al pasar el mouse */
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------------*/
+
+footer {
+    background-color: #003366;
+    /* Azul Boca */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 5px solid #FFD700;
+    /* Amarillo Boca */
+
+}
+
+footer .social-links a {
+    color: #FFD700;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------------------------------------------------*/
+
+/* Estilos para la sección de inicio */
+#inicio {
+    background: url('img/Cancha_Boca.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#inicio h2 {
+    color: #FFD700;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de video/iframe */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: #000;
+    /* Fondo negro para el video */
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/*---------------------------------------------------------------------*/
+
+/* Sección Productos con Flexbox */
+#productos .productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#productos .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* Efecto al pasar el mouse */
+}
+
+#productos .card:hover {
+    transform: translateY(-5px);
+    /* Pequeño levantamiento al pasar el mouse */
+}
+
+#productos .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#productos .card h3 {
+    color: #003366;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#productos .card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    /* Permite que el párrafo ocupe el espacio disponible */
+}
+
+#productos .card span {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #FFD700;
+    /* Precio en amarillo */
+}
+
+/*----------------------------------------------------------------------*/
+
+/* Sección Reseñas con Grid */
+#reseñas .reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Columnas responsivas */
+    gap: 20px;
+    /* Espacio entre los elementos de la cuadrícula */
+    padding: 20px;
+}
+
+#reseñas .reseña-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-left: 5px solid #003366;
+    /* Un detalle azul en el borde izquierdo */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+#reseñas .reseña-item h3 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-align: left;
+    /* Alineado a la izquierda */
+}
+
+#reseñas .reseña-item p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    /* Para que el párrafo ocupe el espacio */
+}
+
+#reseñas .reseña-item span {
+    font-weight: bold;
+    color: #555;
+    text-align: right;
+    /* El nombre del reseñador a la derecha */
+    display: block;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/* Estilos del Formulario de Contacto */
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    display: block;
+    /* Cada label en su propia línea */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #003366;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto textarea {
+    resize: vertical;
+    /* Permite redimensionar verticalmente */
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: #FFD700;
+    /* Borde amarillo al enfocar */
+    outline: none;
+    /* Quita el contorno por defecto */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+#contacto button {
+    background-color: #003366;
+    /* Botón azul */
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    /* Alinea el botón a la izquierda */
+}
+
+#contacto button:hover {
+    background-color: #004080;
+    /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+
+    /* Ajustes generales para tablets */
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* La navegación se apila en columnas */
+        align-items: center;
+        /* Centra los elementos */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Sección Productos: las cards pueden ser un poco más pequeñas */
+    #productos .card {
+        flex: 1 1 280px;
+        /* Ancho base más pequeño */
+        max-width: 90%;
+        /* Ocupa casi todo el ancho disponible */
+    }
+
+    /* Sección Reseñas: una columna en pantallas pequeñas */
+    #reseñas .reseñas-grid {
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+    }
+
+    /* Sección Contacto: el formulario ya es flexible, pero podemos ajustar el padding */
+    #contacto form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustes para teléfonos móviles */
+    body {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    #inicio h2 {
+        font-size: 2.2em;
+    }
+
+    /* Footer más compacto */
+    footer .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
